@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% for ong in lista_ongs     %}
+    <p>Nome: {{ong.nome}}</p>
+    <p>Endereço: {{ong.endereco}}</p>
+    <p>Email: {{ong.email}}</p>
+    <p>Telefone: {{ong.telefone}}</p>
+    <p>Tempo de duração: {{ong.tempo_duracao}}</p>
+    {% endfor %}
+{% endblock body %}

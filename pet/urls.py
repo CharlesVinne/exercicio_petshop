@@ -4,6 +4,7 @@ from pagina import views
 
 
 urlpatterns = [
+    path('ongs/lista/', views.lista_ongs),
     path('ongs/', views.cadastrar_ong),
     path('lista/', views.pessoas),
     path('admin/', admin.site.urls),

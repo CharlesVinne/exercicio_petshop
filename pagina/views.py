@@ -62,3 +62,21 @@ def cadastrar_ong(request):
             'msg': 'Cadastro realizado com sucesso'
         }
     return render(request, 'cadastro-ong.html', args)
+
+def lista_ongs(request):
+    lista_ong = Ong.objects.all()
+    args = {
+        'lista_ongs':lista_ong
+    }
+    return render (request, 'lista-ongs.html', args)
+
+
+
+
+
+
+
+
+
+
+
