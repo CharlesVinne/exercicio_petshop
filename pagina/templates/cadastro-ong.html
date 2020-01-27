@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="container" >
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn primary" >Cadastrar sua ong</button>
+    </form>
+</section>
+{% endblock body %}
